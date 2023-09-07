@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPlanet"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_planet_donlon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPlanetName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPlanet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPlanet"
+            app:layout_constraintTop_toTopOf="@+id/imgPlanet"
+            tools:text="Donlon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@+id/tvPlanetName"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlanetName"
+            tools:text="100 miles" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_check"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
